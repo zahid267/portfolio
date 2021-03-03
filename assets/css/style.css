@@ -72,12 +72,13 @@ a {/*text color for <a> tag with no underline*/
 }
 .content {
     /*content class will take 75% of the page width and displayed as inline-block*/
-    width: 100%;
+    width: 97.5%;
     display:flex;
     margin-left: 20px;
     color: navy;
     flex-wrap:wrap;
     flex-direction: column;
+    margin-right: 10px;
 }
 
 .about, .work, .contact{
@@ -93,7 +94,6 @@ a {/*text color for <a> tag with no underline*/
     float: left;
     padding-right: 10px;
     text-align: right;
-   /* margin-bottom: 20px;*/
     font-size: 36px;
 }
 
@@ -103,14 +103,16 @@ a {/*text color for <a> tag with no underline*/
     width: 88%;
     padding-bottom: 10px;
 }
-
+.about img{
+    float: right;
+}
 .work div ul{
     padding: 10px 30px;
 }
-.project{
+.project{/*set the active project css*/
     display: block;
     margin-bottom: 10px;
-    width: 83.5%;
+    width: 83%;
     height: 100px;
     padding: 10px;
     border:3px solid rgb(119, 150, 200);
@@ -120,7 +122,7 @@ a {/*text color for <a> tag with no underline*/
     background-image:url("../images/code_refactor.png");
     opacity: 0.5;
 }
-.proj{
+.proj{ /*set the non-active projects*/
     display: inline-block;
     margin-bottom: 10px;
     width: 40%;
@@ -131,7 +133,7 @@ a {/*text color for <a> tag with no underline*/
     background-color:rgb(92, 143, 163);
     margin: 5px;
 }
-.projlbl{
+.projlbl{   /*project label*/
     float: left;
     background-color: #d9dcd6;
     margin-top: 15px;
