@@ -11,6 +11,9 @@ body {
 }
 
 header {
+    display: flex;
+  /* Defines how to distribute the empty space between child elements */
+  justify-content: space-between;
     /*set the header font, background-color and text color*/
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -21,7 +24,6 @@ header {
 }
 header h1 {
     /*h1 size for the header*/
-    display: inline-block;
     font-size: 48px;
 }
 
@@ -33,7 +35,7 @@ header nav, .contact nav {
     /*header's content will float to the right side*/
     padding-top: 15px;
     margin-right: 20px;
-    float: right;
+    /*float: right;*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
@@ -170,3 +172,35 @@ a {/*text color for <a> tag with no underline*/
     /*footer h2 font size*/
     font-size: 20px;
 }
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+    .header{
+        display: block;
+      }
+    .about, .work, .contact{
+        display: block;
+    }
+    .about h2, .work h2, .contact h2 {
+        width: 100%;
+        float:none;
+        padding-right:none;
+        text-align: left;
+        font-size: 26px;
+    }
+    .about div, .work div, .contact div{    /*separate the section heading with a horizontal line*/
+        border-left:none;
+        border-top: 3px solid navy;;
+    }
+    .projlbl{   /*project label*/
+        font-size: 150%;   
+    }
+  }
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+    .header{
+      display: block;
+    }
+    .projlbl{   /*project label*/
+        font-size: 100%;   
+    }
+  }
