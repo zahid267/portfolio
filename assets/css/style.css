@@ -32,7 +32,7 @@ header h1 .seo {
 }
 
 header nav, .contact nav {
-    /*header's content will float to the right side*/
+    /*header's nav content will float to the right side*/
     padding-top: 15px;
     margin-right: 20px;
     /*float: right;*/
@@ -56,7 +56,7 @@ a {/*text color for <a> tag with no underline*/
 }
 .hero {
     /*hero class background image and size*/
-    height: 200px;      /*original value 800px;*/
+    height: 200px;   
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/port_bg.jpg");
@@ -73,7 +73,7 @@ a {/*text color for <a> tag with no underline*/
     text-shadow: 2px 2px 4px #000000;
 }
 .content {
-    /*content class will take 75% of the page width and displayed as inline-block*/
+    /*content class will take 97.5% of the page width and displayed as flex*/
     width: 97.5%;
     display:flex;
     margin-left: 20px;
@@ -164,7 +164,7 @@ a {/*text color for <a> tag with no underline*/
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    bottom: 0%;
+    bottom: 0;
     margin: 0;
 }
 
