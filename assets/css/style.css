@@ -171,11 +171,20 @@ a {/*text color for <a> tag with no underline*/
     /*footer h2 font size*/
     font-size: 20px;
 }
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+    .about h2, .work h2, .contact h2 {
+        font-size: 26px;
+    }
+  }
 /* Large smartphones - navbar changes color */
 @media screen and (max-width: 768px) {
     .header{
         display: block;
-      }
+    }
+     header nav, .contact nav {
+        padding-top: 0;
+    }
     .about, .work, .contact{
         display: block;
     }
@@ -184,7 +193,7 @@ a {/*text color for <a> tag with no underline*/
         float:none;
         padding-right:none;
         text-align: left;
-        font-size: 26px;
+        font-size: 20px;
     }
     .about div, .work div, .contact div{    /*separate the section heading with a horizontal line*/
         border-left:none;
@@ -198,6 +207,9 @@ a {/*text color for <a> tag with no underline*/
 @media screen and (max-width: 576px) {
     .header{
       display: block;
+    }
+    .about h2, .work h2, .contact h2 {
+        font-size: 18px;
     }
     .projlbl{   /*project label*/
         font-size: 100%;   
