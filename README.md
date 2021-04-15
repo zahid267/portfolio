@@ -21,7 +21,7 @@ THEN the visiter is presented with a responsive layout that adapts to the user's
 
 The following animation shows the web application's appearance and functionality:
 
-![portfolio screen-shot](./assets/images/Screenshot_2021-03-03_162130.png)
+![portfolio screen-shot](./assets/images/Portfolio_Demo.gif)
 
 
 * The URL of the deployed application : https://zahid267.github.io/portfolio/
